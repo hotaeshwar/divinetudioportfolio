@@ -189,7 +189,7 @@ export default function AboutUs() {
           transform: translateX(-50%);
         }
         @media (max-width: 767px) {
-          .ladder-line { left: 20px; }
+          .ladder-line { display: none; }
         }
 
         .ladder-dot {

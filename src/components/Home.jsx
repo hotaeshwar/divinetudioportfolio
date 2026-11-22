@@ -97,6 +97,13 @@ export default function Home() {
         }
         .anim-up.on { opacity: 1; transform: translateY(0); }
 
+        @media (max-width: 1023px) {
+          .anim-left { transform: translateY(24px); }
+          .anim-left.on { transform: translateY(0); }
+          .anim-right { transform: translateY(24px); }
+          .anim-right.on { transform: translateY(0); }
+        }
+
         .brk { position: absolute; width: 28px; height: 28px; }
         .brk-tl { top: -8px; left: -8px; border-top: 2px solid #f3ec00; border-left: 2px solid #f3ec00; }
         .brk-tr { top: -8px; right: -8px; border-top: 2px solid #f3ec00; border-right: 2px solid #f3ec00; }
@@ -170,8 +177,8 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
           {/* ── LEFT — Image ── */}
-          <div className={`w-full lg:w-5/12 flex justify-center anim-left ${visible ? "on" : ""}`}>
-            <div className="relative">
+          <div className={`w-full lg:w-5/12 flex justify-center items-center anim-left ${visible ? "on" : ""}`}>
+            <div className="relative mx-auto flex items-center justify-center">
               <div className="absolute inset-0 pointer-events-none" style={{
                 background: "radial-gradient(ellipse at center, rgba(243,236,0,0.32) 0%, transparent 68%)",
                 filter: "blur(22px)",
@@ -182,18 +189,32 @@ export default function Home() {
               <div className="brk brk-tl" /><div className="brk brk-tr" />
               <div className="brk brk-bl" /><div className="brk brk-br" />
 
-              <div className="relative z-10 overflow-hidden" style={{ width: "clamp(240px, 36vw, 370px)" }}>
+              <div
+                className="relative z-10 overflow-hidden flex items-center justify-center"
+                style={{
+                  width: "clamp(260px, 75vw, 370px)",
+                  aspectRatio: "1 / 1",
+                  background: "rgba(255,255,255,0.02)",
+                }}
+              >
                 <img
                   src="/media/logo.png"
                   alt="de'Vine sTudiO"
-                  className="w-full object-cover hero-img-glow"
-                  style={{ display: "block", minHeight: "360px", background: "rgba(255,255,255,0.03)" }}
-                  onError={e => { e.target.src = "https://placehold.co/370x490/1d293d/f3ec00?text=de'Vine+sTudiO"; }}
+                  className="w-full h-full object-contain hero-img-glow p-3 sm:p-5"
+                  style={{ display: "block" }}
+                  onError={e => { e.target.src = "https://placehold.co/370x370/1d293d/f3ec00?text=de'Vine+sTudiO"; }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-[3px]" style={{ background: "#f3ec00" }} />
               </div>
 
-              <div className="absolute z-20 px-3 py-1.5" style={{ background: "#f3ec00", right: "-14px", top: "28px" }}>
+              <div
+                className="absolute z-20 px-3 py-1.5"
+                style={{
+                  background: "#f3ec00",
+                  right: "clamp(-6px, 1.5vw, -14px)",
+                  top: "24px",
+                }}
+              >
                 <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.52rem", fontWeight: 700, letterSpacing: "0.24em", color: "#1d293d", textTransform: "uppercase" }}>Architect</span>
               </div>
             </div>
