@@ -114,7 +114,7 @@ const locations = [
     state: "Chandigarh",
     tag: "Tricity Hub",
     cities: ["Chandigarh", "Mohali", "Panchkula"],
-    desc: "The cosmopolitan heart of Northwest India — Ar. COD Amrita's primary base, serving the Tricity region with full-service architectural and interior design solutions.",
+    desc: "The cosmopolitan heart of Northwest India — Ar. Amrita's primary base, serving the Tricity region with full-service architectural and interior design solutions.",
     color: "#f3ec00",
   },
   {
@@ -145,7 +145,7 @@ const philosophy = [
   {
     num: "01",
     title: "People-First Design",
-    body: "Every space begins with its inhabitants. Ar. COD Amrita listens deeply before she draws — understanding how her clients live, work, and feel at home.",
+    body: "Every space begins with its inhabitants. Ar. Amrita listens deeply before she draws — understanding how her clients live, work, and feel at home.",
   },
   {
     num: "02",
@@ -160,7 +160,7 @@ const philosophy = [
   {
     num: "04",
     title: "Timeless Over Trendy",
-    body: "Trends fade; spaces endure. Ar. COD Amrita designs for the long arc — spaces that remain beautiful and relevant decades after completion.",
+    body: "Trends fade; spaces endure. Ar. Amrita designs for the long arc — spaces that remain beautiful and relevant decades after completion.",
   },
 ];
 
@@ -329,7 +329,7 @@ export default function AboutUs() {
                   marginBottom: "0.2em",
                 }}
               >
-                Ar. COD Amrita
+                Ar. Amrita
               </h1>
               <h1
                 style={{
@@ -366,7 +366,7 @@ export default function AboutUs() {
                 >
                   Principal Architect &amp; Founder of{" "}
                   <span style={{ color: "#f3ec00", fontWeight: 600 }}>de'Vine sTudiO</span>,
-                  Ar. COD Amrita Sachdeva has spent over a decade transforming visions into living spaces.
+                  Ar. Amrita Sachdeva has spent over a decade transforming visions into living spaces.
                   Her practice spans four states, eight cities, and hundreds of stories told through architecture.
                 </p>
 
@@ -449,7 +449,7 @@ export default function AboutUs() {
               </h2>
               <span className="yellow-rule" />
               <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.05rem", fontWeight: 300, color: "rgba(255,255,255,0.55)", marginTop: "14px", maxWidth: "520px", lineHeight: 1.75 }}>
-                Ar. COD Amrita Sachdeva's practice extends across Northwest India — bringing the same standard of excellence to every city she serves.
+                Ar. Amrita Sachdeva's practice extends across Northwest India — bringing the same standard of excellence to every city she serves.
               </p>
             </RevealBlock>
 
@@ -507,7 +507,7 @@ export default function AboutUs() {
                 "Architecture is not just about buildings — it is about the people who inhabit them, the memories they create, and the lives they enable."
               </blockquote>
               <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.65rem", letterSpacing: "0.3em", color: "#f3ec00", textTransform: "uppercase", fontWeight: 600 }}>
-                — Ar. COD Amrita Sachdeva
+                — Ar. Amrita Sachdeva
               </span>
             </RevealBlock>
           </div>

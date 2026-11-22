@@ -101,7 +101,7 @@ export default function ContactUs() {
   const buildWhatsAppMessage = () => {
     const service = form.service || "General Enquiry";
     const lines = [
-      `Hello Ar. COD Amrita,`,
+      `Hello Ar. Amrita,`,
       ``,
       `I'm interested in *${service}*.`,
       ``,
@@ -302,7 +302,7 @@ export default function ContactUs() {
               lineHeight: 1.65,
             }}
           >
-            Share your vision with Ar. COD Amrita Sachdeva — receive a response directly on WhatsApp.
+            Share your vision with Ar. Amrita Sachdeva — receive a response directly on WhatsApp.
           </p>
         </div>
 
@@ -477,10 +477,10 @@ export default function ContactUs() {
                     lineHeight: 1.6,
                   }}
                 >
-                  Prefer to reach out directly? Chat with Ar. COD Amrita on WhatsApp.
+                  Prefer to reach out directly? Chat with Ar. Amrita on WhatsApp.
                 </p>
                 <a
-                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello Ar. COD Amrita, I'd like to discuss a design project with de'Vine sTudiO.")}`}
+                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello Ar. Amrita, I'd like to discuss a design project with de'Vine sTudiO.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="wa-direct-btn"
@@ -520,7 +520,7 @@ export default function ContactUs() {
                     marginTop: "6px",
                   }}
                 >
-                  — Ar. COD Amrita Sachdeva
+                  — Ar. Amrita Sachdeva
                 </span>
               </div>
 
